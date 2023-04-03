@@ -21,7 +21,7 @@ router.get('/', async (req, res) => {
             lower: true,
             strict: false
         });
-        res.header('Content-Disposition', `attachment; filename="${title}.mp3"`);
+        // res.header('Content-Disposition', `attachment; filename="${title}.mp3"`);
         ytdl(url, {
             format: '140',
             filter: 'audioonly',
