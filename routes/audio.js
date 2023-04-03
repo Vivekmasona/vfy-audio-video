@@ -23,7 +23,7 @@ router.get('/', async (req, res) => {
         });
         res.header('Content-Disposition', `attachment; filename="${title}.mp3"`);
         ytdl(url, {
-            format: 'mp3',
+            format: '140',
             filter: 'audioonly',
             quality: 'highest'
         }).pipe(res);
